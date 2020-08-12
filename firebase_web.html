@@ -87,14 +87,13 @@
             <input style="background-color: #5cb85c; color: #f2fbf8;" type="button" value="Add New Record" onclick="save_user();" />
           
           <input
-            id="update"
+            
             type="button"
             value="Update"
             onclick="update_user();"
             style="background-color: #f0ad4e; color: #f2fbf8;"
           />
           <input
-            id="delete"
             type="button"
             value="Delete"
             onclick="delete_user();"
@@ -114,6 +113,9 @@
       </tr>
       <tr>
         <td><h6 style="font-weight: bolder;">To "Delete" a record, fill out the ID field with that record's ID and click the "Delete" button.</h6></td>
+      </tr>
+      <tr>
+        <td><h6 style="font-weight: bolder;">If you use "Delete" or "Update" buttons without a record ID, they will alter all the records on the table.</h6></td>
       </tr>
     </table>
     <br>
@@ -202,6 +204,7 @@
       }
 
       function update_user() {
+        console.log("prueba");
         var user_name = document.getElementById("user_name").value;
         var last_name = document.getElementById("last_name").value;
         var email = document.getElementById("email").value;
@@ -209,7 +212,7 @@
         var user_id = document.getElementById("user_id").value;
 
         var data = {
-          user_id: uid,
+          user_id: user_id,
           user_name: user_name,
           last_name: last_name,
           email: email,
