@@ -1,0 +1,22 @@
+body {
+  margin-top: 2.5%;
+  font-family: Raleway-Regular, sans-serif;
+  text-align: center;
+  align-items: center;
+  background-color: #1c8ef9;
+}
+
+form {
+  margin-left: 40%;
+  margin-right: 40%;
+}
+table {
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.panel {
+  background-color: white;
+  size: 80%;
+}
